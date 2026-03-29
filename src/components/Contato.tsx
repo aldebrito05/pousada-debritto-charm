@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, MessageCircle } from "lucide-react";
+import ContatoForm from "./ContatoForm";
 
 const Contato = () => {
   return (
@@ -17,7 +18,9 @@ const Contato = () => {
             Entre em contato para reservas e informações
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+          <ContatoForm />
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
             <a
               href="tel:+5528999921722"
               className="flex items-center gap-3 bg-primary-foreground/15 hover:bg-primary-foreground/25 transition-colors rounded-xl px-8 py-4 font-body text-lg"
